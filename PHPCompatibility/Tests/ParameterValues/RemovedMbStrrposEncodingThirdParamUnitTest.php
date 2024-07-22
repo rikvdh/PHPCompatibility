@@ -99,6 +99,7 @@ class RemovedMbStrrposEncodingThirdParamUnitTest extends BaseSniffTestCase
         }
 
         $data[] = [27];
+        $data[] = [30];
 
         return $data;
     }

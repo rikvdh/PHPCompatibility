@@ -26,3 +26,5 @@ mb_strrpos('abc abc abc', 'abc', 'utf-' . $utfType);
 // Safeguard support for PHP 8 named parameters.
 mb_strrpos(haystack: 'abc abc abc', needle: 'abc', encoding: 'UTF-8'); // OK.
 mb_strrpos(offset: 'UTF-8', haystack: 'abc abc abc', needle: 'abc',); // Error, not that it would make sense to pass this.
+
+mb_strrpos('abc abc abc', 'abc', $pos['offset']);
